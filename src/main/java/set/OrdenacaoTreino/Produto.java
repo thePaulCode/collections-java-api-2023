@@ -1,4 +1,4 @@
-package main.java.set.Ordenacao;
+package main.java.set.OrdenacaoTreino;
 
 import java.util.Objects;
 
@@ -13,14 +13,12 @@ public class Produto implements Comparable<Produto>{
     // construtor
 
     public Produto(long codigo, String nome, double preco, int quantidade) {
-
-        this.codigo = codigo;
         this.nome = nome;
+        this.codigo = codigo;
         this.preco = preco;
         this.quantidade = quantidade;
     }
 
-    // comparacao por nome - organizar
     @Override
     public int compareTo(Produto p) {
         return nome.compareToIgnoreCase(p.getNome());
@@ -28,6 +26,17 @@ public class Produto implements Comparable<Produto>{
 
     // comparacao por codigo
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Produto produto)) return false;
+        return getCodigo() == produto.getCodigo();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCodigo());
+    }
 
     // getters
 
@@ -60,7 +69,6 @@ public class Produto implements Comparable<Produto>{
                 ", quantidade=" + quantidade +
                 '}';
     }
-
 
 
 }

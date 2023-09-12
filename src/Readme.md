@@ -20,5 +20,5 @@ Este repositório contém anotações, exemplos de código e recursos relacionad
 - Classes e interfaces relacionadas
 - Práticas recomendadas e padrões de uso
 
-## Estrutura do Repositório
+
 
