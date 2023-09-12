@@ -64,9 +64,9 @@ public class CarrinhoDeCompras {
         CarrinhoDeCompras carroAtual = new CarrinhoDeCompras();
 
        carroAtual.exibirItens();
-       carroAtual.adicionarItem("Pao", 10.50, 8);
+       carroAtual.adicionarItem("Pao", 10.33, 8);
        carroAtual.adicionarItem("Manteiga", 6.00, 2);
-       carroAtual.adicionarItem("Café", 18, 3);
+       carroAtual.adicionarItem("Café", 18.49, 3);
 
        carroAtual.exibirItens();
        System.out.println("Valor total do carrinho: " + carroAtual.calcularValorTotal());
